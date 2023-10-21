@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="69.024">
+<testcase classname="Checkout product" name="User checkout all the product" time="15.446">
+<system-out><![CDATA[Given user at Swag Labs Login screen........................................passed
+When user type standard_user in Username field..............................passed
+And user type secret_sauce in Password field................................passed
+And user click Login button.................................................passed
+Then user navigated to Product page.........................................passed
+When user click Add to cart on product Sauce Labs Backpack..................passed
+And user click Add to cart on product Sauce Labs Bike Light.................passed
+And user click Add to cart on product Sauce Labs Bolt T-Shirt...............passed
+And user click Add to cart on product Sauce Labs Fleece Jacket..............passed
+And user click Add to cart on product Sauce Labs Onesie.....................passed
+And user click Add to cart on product Test.allTheThings T-Shirt Red.........passed
+And user click Cart button..................................................passed
+And user click Checkout button..............................................passed
+And user type firstName in First Name field.................................passed
+And user type lastName in Last Name field...................................passed
+And user type 10000 in Postal Code field....................................passed
+And user click Continue button..............................................passed
+And user click Finish button................................................passed
+Then user navigated to Checkout: Complete!..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checkout product" name="User checkout without any product" time="11.307">
+<system-out><![CDATA[Given user at Swag Labs Login screen........................................passed
+When user type standard_user in Username field..............................passed
+And user type secret_sauce in Password field................................passed
+And user click Login button.................................................passed
+Then user navigated to Product page.........................................passed
+When user click Cart button.................................................passed
+And user click Checkout button..............................................passed
+Then user see Error message Please add at least 1 product...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Information" name="User put valid information on Your Information screen" time="10.78">
+<system-out><![CDATA[Given user at Swag Labs Login screen........................................passed
+When user type standard_user in Username field..............................passed
+And user type secret_sauce in Password field................................passed
+And user click Login button.................................................passed
+Then user navigated to Product page.........................................passed
+When user click Add to cart on product Sauce Labs Backpack..................passed
+And user click Cart button..................................................passed
+And user click Checkout button..............................................passed
+And user type firstName in First Name field.................................passed
+And user type lastName in Last Name field...................................passed
+And user type 10000 in Postal Code field....................................passed
+And user click Continue button..............................................passed
+And user click Finish button................................................passed
+Then user navigated to Checkout: Complete!..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Information" name="User not put any information on Your Information screen" time="10.622">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='finish']&quot;}&#10;  (Session info: MicrosoftEdge=118.0.2088.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MTNB884', ip: '192.168.212.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 118.0.2088.61, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:7643}, msedge: {msedgedriverVersion: 118.0.2088.57 (fcccb64c11df..., userDataDir: C:\Users\TEGUH_~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 610b1fccd3a97a8b4d9d29777d2ca29b&#10;*** Element info: {Using=xpath, value=//*[@id='finish']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user at Swag Labs Login screen........................................passed
+When user type standard_user in Username field..............................passed
+And user type secret_sauce in Password field................................passed
+And user click Login button.................................................passed
+Then user navigated to Product page.........................................passed
+When user click Add to cart on product Sauce Labs Backpack..................passed
+And user click Cart button..................................................passed
+And user click Checkout button..............................................passed
+And user click Continue button..............................................passed
+And user click Finish button................................................failed
+Then user see error message Error: First Name is required displayed.........skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='finish']"}
+  (Session info: MicrosoftEdge=118.0.2088.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MTNB884', ip: '192.168.212.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 118.0.2088.61, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:7643}, msedge: {msedgedriverVersion: 118.0.2088.57 (fcccb64c11df..., userDataDir: C:\Users\TEGUH_~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 610b1fccd3a97a8b4d9d29777d2ca29b
+*** Element info: {Using=xpath, value=//*[@id='finish']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at cucumber.stepDef.CommonStep.click_button_finish(CommonStep.java:109)
+	at ✽.user click Finish button(file:///D:/selenium-cucumber/src/test/java/cucumber/features/Information.feature:26)
+]]></failure>
+</testcase>
+<testcase classname="Login to saucedemo" name="User can login with valid credential" time="10.235">
+<system-out><![CDATA[Given user at Swag Labs Login screen........................................passed
+When user type standard_user in Username field..............................passed
+And user type secret_sauce in Password field................................passed
+And user click Login button.................................................passed
+Then user navigated to Product page.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to saucedemo" name="User can't login with invalid password" time="10.366">
+<system-out><![CDATA[Given user at Swag Labs Login screen........................................passed
+When user type standard_user in Username field..............................passed
+And user type invalid_password in Password field............................passed
+And user click Login button.................................................passed
+Then user see error message Epic sadface....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
